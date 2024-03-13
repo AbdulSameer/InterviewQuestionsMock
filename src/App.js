@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import Counter from './component/Counter';
 import './App.css';
+import Forms from './component/Forms';
+import List from './component/List';
+import Navigation from './component/Navigation';
+import Home from './component/Home';
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import Items from './component/Items';
+import Interview from './component/Interview';
+import Dataverse from './component/Dataverse'; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <BrowserRouter>
+    <Navigation/>
+    <Routes>
+      <Route path ="/" element={
+        <Home/>
+      }/>
+      <Route path = '/Items' element = {<Items/>}/>
+    </Routes>
+    </BrowserRouter> */}
+    <Dataverse/>
+    </>
   );
 }
 
